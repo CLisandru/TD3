@@ -8,7 +8,8 @@
 	<link type="text/css" rel="stylesheet" href="main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 	</script>
-
+	<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+	<script>eruda.init()</script>
 </head>
 
 <body>
@@ -38,10 +39,14 @@
 			<a class="ar-object" id="3" href="#">Objet 3</a>
 			<a class="ar-object" id="4" href="#">Objet 4</a>
 		</div>
+	
 		<div id="container" style="position: fixed;"></div>
-		<span style="font-size:30px;cursor:pointer;position: absolute;" onclick="openNav()">&#9776; </span>
+	
+		<span style="font-size:30px;cursor:pointer;position:absolute;"
+			  onclick="openNav()">&#9776;</span>
+	
+		<button type="button" id="place-button">PLACE</button>
 	</div>
-
 
 
 	<script type="module" src="js/script.js"></script>
